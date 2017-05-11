@@ -1,0 +1,10 @@
+#tableId{
+    border-radius: 5px;
+    border: solid lightgray;
+    border-collapse: collapse;
+}
+#tableId td{
+    border-bottom: solid lightgray;
+    border-left: solid lightgray;
+    padding: 5px;
+}

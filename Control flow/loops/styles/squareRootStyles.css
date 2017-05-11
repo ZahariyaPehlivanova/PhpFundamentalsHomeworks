@@ -1,0 +1,14 @@
+#tableId{
+    border-radius: 5px;
+    border: solid lightgray;
+    border-collapse: collapse;
+}
+#tableId td{
+    border-bottom: solid lightgray;
+    border-left: solid lightgray;
+}
+#tableId tr:first-child td{
+    font-weight: bold;
+    margin: 50px;
+    padding: 5px;
+}

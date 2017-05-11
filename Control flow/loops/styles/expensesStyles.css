@@ -1,0 +1,9 @@
+table td{
+   border-bottom: solid lightgray;
+   padding: 5px;
+}
+table tr:first-child td{
+     font-weight: bold;
+     margin: 50px;
+     padding: 5px;
+ }

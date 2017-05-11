@@ -1,0 +1,10 @@
+#firstColumn{
+    background: burlywood;
+    text-align: center;
+    margin: 10px;
+}
+#secondColumn{
+    background: navajowhite;
+    text-align: center;
+    margin: 10px;
+}
