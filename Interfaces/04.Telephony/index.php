@@ -10,6 +10,7 @@ require_once 'Smartphone.php';
 $phones = explode(' ',trim(fgets(STDIN)));
 $urls = explode(' ',trim(fgets(STDIN)));
 $smartPhone = new Smartphone();
+
 foreach ($phones as $phone){
     try {
         echo $smartPhone->call($phone);
@@ -17,6 +18,7 @@ foreach ($phones as $phone){
         echo $ex->getMessage();
     }
 }
+
 foreach ($urls as $url){
     try {
         echo $smartPhone->browse($url);

@@ -3,5 +3,5 @@ interface IBuyer
 {
     public function getFood() : int;
 
-    public function BuyFood();
+    public function buyFood();
 }

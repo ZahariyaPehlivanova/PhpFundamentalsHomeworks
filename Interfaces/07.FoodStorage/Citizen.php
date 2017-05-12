@@ -1,5 +1,5 @@
 <?php
-class Citizen implements IIdentify,IBirthdate, IBuyer{
+class Citizen implements IIdentify, IBirthdate, IBuyer{
     private $name;
     private $age;
     private $id;
@@ -8,9 +8,9 @@ class Citizen implements IIdentify,IBirthdate, IBuyer{
 
     public function __construct(string $name,int $age,string $id,string $birthDate)
     {
-        $this->name=$name;
-        $this->age=$age;
-        $this->id=$id;
+        $this->name = $name;
+        $this->age = $age;
+        $this->id = $id;
         $this->birthDate=$birthDate;
     }
 
@@ -34,7 +34,7 @@ class Citizen implements IIdentify,IBirthdate, IBuyer{
         $this->food = $value;
     }
 
-    public function BuyFood()
+    public function buyFood()
     {
         $this->setFood($this->getFood() + 10);
     }

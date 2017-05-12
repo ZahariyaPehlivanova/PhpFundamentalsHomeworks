@@ -7,7 +7,6 @@ require_once "Citizen.php";
 require_once "Robot.php";
 require_once "Pet.php";
 
-
 $result = [];
 while (true){
     $input = explode(' ',trim(fgets(STDIN)));
@@ -19,9 +18,10 @@ while (true){
         $citizen = new Citizen($input[1],intval($input[2]),$input[3],$input[4]);
         $result[] = $citizen;
     }else if ($input[0] === "Pet"){
-        $pet = new Pet($input[1],$input[2]);
+        $pet = new Pet($input[1], $input[2]);
         $result[] = $pet;
     }
+
 }
 $year = trim(fgets(STDIN));
 foreach ($result as $entry){

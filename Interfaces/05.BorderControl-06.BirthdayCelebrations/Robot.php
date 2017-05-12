@@ -5,8 +5,8 @@ class Robot implements IIdentify{
     private $model;
 
     public function __construct(string $model,string $id)
-    {   
-        $this->model=$model;
+    {
+        $this->model = $model;
         $this->id=$id;
     }
 

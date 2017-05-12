@@ -10,7 +10,7 @@ abstract class Vehicle implements VehicleInterface
 
     public function __construct(float $fuel, float $fuelConsumption,float $tankCapacity)
     {
-        $this->fuel = $fuel;
+        $this->setFuel($fuel);
         $this->setFuelConsumption($fuelConsumption);
         $this->tankCapacity = $tankCapacity;
     }
@@ -34,6 +34,13 @@ abstract class Vehicle implements VehicleInterface
     private function getClassName(): string
     {
         return basename(get_class($this));
+    }
+
+    protected function setFuel(float $value) {
+        if ($value < 0) {
+            throw new \Exception("Fuel must be a positive number");
+        }
+        $this->fuel = $value;
     }
 
     public function __toString()

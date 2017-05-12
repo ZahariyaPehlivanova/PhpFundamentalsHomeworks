@@ -23,7 +23,7 @@ class Rebel implements IBuyer
         $this->food = $value;
     }
 
-    public function BuyFood()
+    public function buyFood()
     {
         $this->setFood($this->getFood() + 5);
     }

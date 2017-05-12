@@ -20,6 +20,6 @@ class Citizen implements IIdentify,IBirthdate{
 
     public function getBirthdate() : string
     {
-       return $this->birthDate;
+        return $this->birthDate;
     }
 }
